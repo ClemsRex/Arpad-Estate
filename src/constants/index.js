@@ -1,0 +1,3 @@
+export const ABOUT_TEXT = `At Arpad, we understand that buying and sellind a property is more than just a transaction, it's a life-changing experience. Our team of expert agents is dedicated to providing personalized service, in depth market Knowledge and a deep understanding of your unique needs.`
+export const ABOUT_TEXT_2 = `Let us help you find your dream home or sell your current property with ease and confidence.`
+export const ABOUT_PARAGRAPH = `Here at Arpad Estates, We make a House feel like Home`

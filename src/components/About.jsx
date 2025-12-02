@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { ABOUT_PARAGRAPH, ABOUT_TEXT, ABOUT_TEXT_2 } from '../constants'
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
         <h1 className='text-2xl sm:text-4xl font-bold mb-2 '>About <span className='underline underline-offset-4 decoration-1 under font-light'>Our Company</span></h1>
 
 
-        <p className='text-gray-500 max-w-80 text-center mb-8 '>Here at Arpad Estates, We make a House feel like Home </p>
+        <p className='text-gray-500 max-w-80 text-center mb-8 '> {ABOUT_PARAGRAPH} </p>
 
         <div className='flex flex-col md:flex-row items-center md:items-center md:gap-20'>
 
@@ -36,8 +37,8 @@ const About = () => {
                     </div>
 
                 </div>
-                <p className='my-10 max-w-lg '> At Arpad, we understand that buying and sellind a property is more than just a transaction, it's a life-changing experience. Our team of expert agents is dedicated to providing personalized service, in depth market Knowledge and a deep understanding of your unique needs. </p>
-                <p className='mb-4'>Let us help you find your dream home or sell your current property with ease and confidence.</p>
+                <p className='my-10 max-w-lg '> {ABOUT_TEXT}  </p>
+                <p className='mb-4'> {ABOUT_TEXT_2} </p>
 
                 <button className='bg-gray-400 px-8 hover:bg-gray-600 py-2 text-white rounded'> Learn more </button>
             </div>
