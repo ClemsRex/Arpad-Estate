@@ -3,6 +3,8 @@ import {assets} from '../assets/assets'
 
 const Navbar = () => {
 
+  // Functionality code for Mobile Menu
+
   const [showMobileMenu, setShowMobileMenu] = useState(false)
 
   useEffect(()=>{
@@ -18,23 +20,31 @@ const Navbar = () => {
   },[showMobileMenu])
 
 
+  // End of Functionality code for MobileMenu
 
   return (
+
+    // Logo Section
     <div className='absolute top-0 left-0 w-full z-10'>
 
         <div className='container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent '>
             <img src={assets.logo} alt="" />
 
+            {/* Menu Section */}
 
             <ul className='hidden md:flex gap-7 text-white '>
                 <a href="#Header" className='cursor-pointer hover:text-gray-400'>Home</a>
                 <a href="#About" className='cursor-pointer hover:text-gray-400'>About</a>
-                <a href="#Project" className='cursor-pointer hover:text-gray-400'>Projects</a>
-                <a href="#Testimonial" className='cursor-pointer hover:text-gray-400'>Testimonials</a>
+                <a href="#Projects" className='cursor-pointer hover:text-gray-400'>Projects</a>
+                <a href="#Testimonials" className='cursor-pointer hover:text-gray-400'>Testimonials</a>
             </ul>
+
+            {/* Signup Section */}
 
 
             <button className='hidden md:block bg-white hover:bg-gray-500 hover:text-white px-8 py-2 rounded-full'>Sign up</button>
+
+            {/* Menu-Icon section */}
 
 
             <img onClick={()=> setShowMobileMenu(true) } src={assets.menu_icon} className='md:hidden w-7 cursor-pointer ' alt="" />
@@ -42,12 +52,18 @@ const Navbar = () => {
 
 
 
-        {/* ---- mobile menu -------- */}
+        {/* ---- MobileMenu -------- */}
+
+        
         <div className={`md:hidden ${showMobileMenu ? 'fixed w-full' : 'h-0 w-0' }  right-0 top-0 bottom-0 overflow-hidden bg-white transition-all`}>
+
+          {/* MobileMenu Cross Section */}
 
           <div className='flex justify-end p-6' cursor-pointer>
             <img onClick={()=> setShowMobileMenu(false)} src={assets.cross_icon} className='w-6' alt="" />
           </div>
+
+          {/* MobileMenu section */}
 
 
           <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium' >
